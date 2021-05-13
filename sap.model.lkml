@@ -1,10 +1,10 @@
-connection: "sap-adapter"
-include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
-# include: "/**/*.view.lkml"                 # include all views in this project
-# include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
+connection: "@{CONNECTION}"
+include: "/views/*.view.lkml"
+label: "SAP"
 
 
 explore: orders {
+  label: "Orders, Materials and Customers"
   join: materials {
     type: left_outer
     sql_on: ${materials.material} = ${orders.material} ;;
@@ -19,6 +19,7 @@ explore: orders {
 
 
 explore: revenue {
+  label: "Revenue, Materials and Customers"
  join: materials {
   type: left_outer
   sql_on: ${materials.material} = ${revenue.material} ;;
