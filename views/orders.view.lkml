@@ -23,11 +23,14 @@ view: orders {
       week,
       month,
       quarter,
-      year
+      year,
+      month_name,
+      time,
+      hour_of_day
     ]
     convert_tz: no
     datatype: timestamp
-    sql: CONCAY(${TABLE}.CreatedOn,' ',${TABLE}.Time) ;;
+    sql: TIMESTAMP(CONCAT(${TABLE}.CreatedOn,' ',${TABLE}.Time)) ;;
   }
 
   dimension: cumulative_confirmed_quantity {

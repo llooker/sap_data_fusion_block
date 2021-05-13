@@ -154,11 +154,12 @@ view: customers {
       week,
       month,
       quarter,
-      year
+      year,
+      month_name
     ]
     convert_tz: no
     datatype: timestamp
-    sql: TIMESTAMP(CONCAT(${TABLE}.ConfirmationDate,${TABLE}.ConfirmationTime)) ;;
+    sql: TIMESTAMP(CONCAT(${TABLE}.ConfirmationDate,' ',${TABLE}.ConfirmationTime)) ;;
   }
 
   dimension: confirmation_status {
@@ -238,7 +239,7 @@ view: customers {
     sql: ${TABLE}.CustomerNumber ;;
     link: {
       label: "Customer Dashboard"
-      url: "https://protodemo.cloud.looker.com/dashboards-next/72?Customer%20Number={{ value }}"
+      url: "/dashboards-next/sap::customer_deep_dive?Customer%20Number={{ value }}"
     }
   }
 
@@ -294,6 +295,7 @@ view: customers {
     type: string
     description: "Business Region is a business region (North America, Europe or Asia) within the Company for which separate financial statements have been established to measure financial performance"
     sql: ${TABLE}.Region ;;
+    map_layer_name: us_states
   }
 
   dimension: region_name {

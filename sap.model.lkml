@@ -1,5 +1,6 @@
 connection: "@{CONNECTION}"
 include: "/views/*.view.lkml"
+include: "/dashboards/*"
 label: "SAP"
 
 

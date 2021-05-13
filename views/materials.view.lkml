@@ -69,7 +69,7 @@ view: materials {
     ]
     convert_tz: no
     datatype: timestamp
-    sql: CONCAT(${TABLE}.CreatedOn,' ',${TABLE}.CreatedTime)  ;;
+    sql: TIMESTAMP(CONCAT(${TABLE}.CreatedOn,' ',${TABLE}.CreatedTime)) ;;
   }
 
   dimension: dangerous_goods_indicator {
