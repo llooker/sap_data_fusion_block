@@ -1,4 +1,4 @@
-**NOTE: This block requires exporting SAP data into BigQuery through Cloud Data Fusion. Please [review the step-by-step guide](#) and make sure data is in BigQuery before attempting to use this block:**
+**NOTE: This block requires exporting SAP data into BigQuery through Cloud Data Fusion**
 
 ___
 # Readme: SAP (Cloud Data Fusion) Looker Block
