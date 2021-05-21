@@ -270,7 +270,7 @@ view: orders {
   #TODO: confirm with team that this is correct
   measure: count_rejected {
     type: count
-    filters: [rejection_status: "-NULL"]
+    filters: [rejection_reason: "-NULL"]
   }
 
   measure: percent_rejected {
