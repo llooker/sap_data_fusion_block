@@ -1,0 +1,25 @@
+{
+  "label": "SAP (Cloud Data Fusion)",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/sap_icon.png",
+    "tagline": "Better understand orders and revenue across sales teams, materials and individual customers from SAP."
+  },
+
+  "constants": {
+    "CONNECTION": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "APP_NAME": { "label": "App Name" },
+    "PLATFORM": { "label": "Platform" },
+    "PROJECT":  { "label": "Project" },
+    "SCHEMA_NAME": {"label": "Schema Name"}
+  },
+  "models": [
+    {
+      "name": "crashlytics",
+      "connection_constant": "CONNECTION"
+    }
+  ]
+}
