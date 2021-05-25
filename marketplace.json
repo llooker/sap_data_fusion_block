@@ -11,10 +11,9 @@
       "label": "Connection Name",
       "value_constraint": "connection"
     },
-    "APP_NAME": { "label": "App Name" },
-    "PLATFORM": { "label": "Platform" },
-    "PROJECT":  { "label": "Project" },
-    "SCHEMA_NAME": {"label": "Schema Name"}
+    "PROJECT": { "label": "Project" },
+    "DIMENSION_DATASET": { "label": "Dimension Dataset" },
+    "FACT_DATASET":  { "label": "Fact Dataset" }
   },
   "models": [
     {
