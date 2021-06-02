@@ -1,4 +1,4 @@
-view: accounting_fact {
+view: accounting {
   sql_table_name: `sap-adapter.p2p_sap_cdf_facts.accounting_fact`
     ;;
 

@@ -1,4 +1,4 @@
-view: material_inventory_fact {
+view: material_inventory {
   sql_table_name: `sap-adapter.p2p_sap_cdf_facts.material_inventory_fact`
     ;;
 

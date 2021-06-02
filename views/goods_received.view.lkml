@@ -1,4 +1,4 @@
-view: goods_received_fact {
+view: goods_received {
   sql_table_name: `sap-adapter.p2p_sap_cdf_facts.goods_received_fact`
     ;;
 

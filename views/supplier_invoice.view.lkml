@@ -1,4 +1,4 @@
-view: supplier_invoice_fact {
+view: supplier_invoice {
   sql_table_name: `sap-adapter.p2p_sap_cdf_facts.supplier_invoice_fact`
     ;;
 

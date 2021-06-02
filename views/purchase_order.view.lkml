@@ -1,4 +1,4 @@
-view: purchase_order_fact {
+view: purchase_order {
   sql_table_name: `sap-adapter.p2p_sap_cdf_facts.purchase_order_fact`
     ;;
 
