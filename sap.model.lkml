@@ -34,11 +34,11 @@ join: customers {
 }
 
 
-# P2P
+# Procure To Pay
 
 explore: accounting {
   label: "Accounts and Materials"
-  group_label: "P2P"
+  group_label: "SAP - Procure To Pay"
   join: materials {
     type: left_outer
     sql_on: ${accounting.material_number} = ${materials.material};;
@@ -48,7 +48,7 @@ explore: accounting {
 
 explore: goods_received {
   label: "Goods and Materials"
-  group_label: "P2P"
+  group_label: "SAP - Procure To Pay"
   join: materials {
     type: left_outer
     sql_on: ${goods_received.material} = ${materials.material};;
@@ -58,7 +58,7 @@ explore: goods_received {
 
 explore: material_inventory {
   label: "Inventory and Materials"
-  group_label: "P2P"
+  group_label: "SAP - Procure To Pay"
   join: materials {
     type: left_outer
     sql_on: ${material_inventory.material_number} = ${materials.material};;
@@ -68,7 +68,7 @@ explore: material_inventory {
 
 explore: purchase_order {
   label: "Purchase, Materials and Suppliers"
-  group_label: "P2P"
+  group_label: "SAP - Procure To Pay"
   join: materials {
     type: left_outer
     sql_on: ${purchase_order.purchase_order_item_material_number} = ${materials.material};;
@@ -83,7 +83,7 @@ explore: purchase_order {
 
 explore: supplier_invoice {
   label: "Suuplier_Invoice, Materials and Suppliers"
-  group_label: "P2P"
+  group_label: "SAP - Procure To Pay"
   join: materials {
     type: left_outer
     sql_on: ${supplier_invoice.material_number} = ${materials.material};;
