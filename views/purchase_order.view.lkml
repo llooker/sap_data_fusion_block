@@ -512,6 +512,10 @@ view: purchase_order {
     type: sum
     sql: ${net_order_value_in_pocurrency} ;;
 #    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
+    link: {
+      label: "Test"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/82"
+    }
   }
 
   measure: total_po_quantity {
