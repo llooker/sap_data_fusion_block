@@ -516,7 +516,7 @@ view: purchase_order {
   measure: total_po_quantity {
     type: sum
     sql: ${purchase_order_quantity} ;;
-    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
+#    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
   }
 
 #  measure: total_distinct_po_count {
