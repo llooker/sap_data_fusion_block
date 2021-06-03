@@ -74,9 +74,9 @@ explore: purchase_order {
     sql_on: ${purchase_order.purchase_order_item_material_number} = ${materials.material};;
     relationship: many_to_one
   }
-  join: supplier {
+  join: suppliers {
     type: left_outer
-    sql_on: ${purchase_order.vendors_account_number} = ${supplier.vendor_account_number};;
+    sql_on: ${purchase_order.vendors_account_number} = ${suppliers.vendor_account_number};;
     relationship: many_to_one
   }
 }
@@ -89,9 +89,9 @@ explore: supplier_invoice {
     sql_on: ${supplier_invoice.material_number} = ${materials.material};;
     relationship: many_to_one
   }
-  join: supplier {
+  join: suppliers {
     type: left_outer
-    sql_on: ${supplier_invoice.vendor_account_number} = ${supplier.vendor_account_number};;
+    sql_on: ${supplier_invoice.vendor_account_number} = ${suppliers.vendor_account_number};;
     relationship: many_to_one
   }
 }

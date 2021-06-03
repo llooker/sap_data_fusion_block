@@ -1,4 +1,4 @@
-view: supplier {
+view: suppliers {
   sql_table_name: `sap-adapter.p2p_sap_cdf_dimension.supplier_dimension`
     ;;
 
