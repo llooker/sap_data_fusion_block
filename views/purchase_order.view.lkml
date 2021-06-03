@@ -513,8 +513,8 @@ view: purchase_order {
     sql: ${net_order_value_in_pocurrency} ;;
 #    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
     link: {
-      label: "Test"
-      url: "https://protodemo.cloud.looker.com/dashboards-next/82"
+      label: "Purchase Order Deep Dive"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/83"
     }
   }
 
@@ -522,6 +522,10 @@ view: purchase_order {
     type: sum
     sql: ${purchase_order_quantity} ;;
 #    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
+    link: {
+      label: "Purchase Order Deep Dive"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/83"
+    }
   }
 
 #  measure: total_distinct_po_count {
