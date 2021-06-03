@@ -542,8 +542,8 @@ view: purchase_order {
   }
 
   measure: total_po_line_item_return_count {
-    type: sum
-    sql: ${purchasing_document_number} ;;
+    type: count
+#    sql: ${purchasing_document_number} ;;
     filters: [returns_item: "-NULL", deletion_indicatorin_purchasing_document: "-L"]
   }
 
