@@ -510,7 +510,7 @@ view: purchase_order {
   measure: total_po_amount {
     type: sum
     sql: ${net_order_value_in_pocurrency} ;;
-    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
+#    filters: [returns_item: "NULL", deletion_indicatorin_purchasing_document: "-L"]
   }
 
   measure: total_po_quantity {
