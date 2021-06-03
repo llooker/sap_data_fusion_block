@@ -248,6 +248,6 @@ view: supplier_invoice {
   measure: total_invoice_amount {
     type: sum
     sql: ${gross_invoice_amount} ;;
-    filters: [invoice_document_status: "X"]
+#    filters: [invoice_document_status: "X"]
   }
 }
