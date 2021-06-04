@@ -510,11 +510,19 @@ view: goods_received {
     type: sum
     sql: ${quantity} ;;
     filters: [movement_type: "101"]
+    link: {
+      label: "Goods Received Deep Dive"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/84"
+    }
   }
 
   measure: total_gr_amount {
     type: sum
     sql: ${amount_in_local_currency} ;;
     filters: [movement_type: "101"]
+    link: {
+      label: "Goods Received Deep Dive"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/84"
+    }
   }
 }

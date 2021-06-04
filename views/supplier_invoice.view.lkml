@@ -244,11 +244,19 @@ view: supplier_invoice {
     type: sum
     sql: ${quantity} ;;
     filters: [debit_credit_indicator: "S"]
+    link: {
+      label: "Supplier Deep Dive"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/85"
+    }
   }
 
   measure: total_invoice_amount {
     type: sum
     sql: ${gross_invoice_amount} ;;
 #    filters: [invoice_document_status: "X"]
+    link: {
+      label: "Supplier Deep Dive"
+      url: "https://protodemo.cloud.looker.com/dashboards-next/85"
+    }
   }
 }
