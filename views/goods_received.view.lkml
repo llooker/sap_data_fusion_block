@@ -339,7 +339,8 @@ view: goods_received {
       week,
       month,
       quarter,
-      year
+      year,
+      month_name
     ]
     convert_tz: no
     datatype: date
