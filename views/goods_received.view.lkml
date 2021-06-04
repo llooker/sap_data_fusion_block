@@ -500,7 +500,7 @@ view: goods_received {
 
   measure: count {
     type: count
-    drill_fields: [company_name, plant_name, currency_name]
+    drill_fields: []
   }
 
 # New Created Measures

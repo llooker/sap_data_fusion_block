@@ -503,7 +503,7 @@ view: purchase_order {
 
   measure: count {
     type: count
-    drill_fields: [company_name, plant_details_name, language_name]
+    drill_fields: []
   }
 
 # New Created Measures

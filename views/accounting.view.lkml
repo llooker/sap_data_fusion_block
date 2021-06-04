@@ -272,6 +272,6 @@ view: accounting {
 
   measure: count {
     type: count
-    drill_fields: [posting_key_name, company_name, ledger_name, user_name]
+    drill_fields: []
   }
 }

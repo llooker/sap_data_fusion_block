@@ -59,6 +59,6 @@ view: suppliers {
 
   measure: count {
     type: count
-    drill_fields: [vendor_name]
+    drill_fields: []
   }
 }
