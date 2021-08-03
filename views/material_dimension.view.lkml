@@ -1,5 +1,5 @@
 view: material_dimension {
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.material_dimension`
+  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.material_dimension`
     ;;
 
   dimension: authorization_group {

@@ -1,5 +1,5 @@
 view: plant {
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.plant_dimension` ;;
+  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.plant_dimension` ;;
 
   dimension: activating_requirements_planning {
     type: string

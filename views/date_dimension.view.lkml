@@ -1,5 +1,5 @@
 view: date_dimension {
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.date_dimension`
+  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.date_dimension`
     ;;
   drill_fields: [id]
 

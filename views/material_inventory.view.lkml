@@ -1,6 +1,6 @@
 view: material_inventory {
    #sql_table_name: `sap-adapter.test_sap_cdf_facts.material_inventory_fact` #Migration to new test schema
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}..material_inventory_fact` ;;
+  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.material_inventory_fact` ;;
 
     dimension: client {
       type: string

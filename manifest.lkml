@@ -16,6 +16,6 @@ constant: FACT_DATASET {
 }
 
 constant: CONNECTION {
-  value: "sap-adapter"
+  value: "looker_bq"
   export: override_optional
 }
