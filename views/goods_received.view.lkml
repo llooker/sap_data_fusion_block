@@ -1,6 +1,6 @@
 view: goods_received {
   #sql_table_name: `sap-adapter.p2p_sap_cdf_facts.goods_received_fact`
-  sql_table_name: @{PROJECT}.@{FACT_DATASET}.goods_received_fact`
+  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.goods_received_fact`
     ;;
 
   dimension: amount_in_local_currency {

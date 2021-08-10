@@ -1,6 +1,6 @@
 view: suppliers {
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.supplier_dimension`     ;;
-#sql_table_name: `sap-adapter.test_sap_cdf_facts.supplier_dimension`
+  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.supplier_dimension`     ;;
+
     dimension: address {
       type: string
       description: "Identification of an address (name, postal code, city, and so on) in Business Address Services."
