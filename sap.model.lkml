@@ -10,9 +10,9 @@ label: "SAP"
 explore: accounting {
   label: "Accounts and Materials"
   group_label: "SAP - Procure To Pay"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${accounting.material_number} = ${materials.material};;
+    sql_on: ${accounting.material_number} = ${material_dimension.material};;
     relationship: many_to_one
   }
 }
@@ -20,9 +20,9 @@ explore: accounting {
 explore: goods_received {
   label: "Goods and Materials"
   group_label: "SAP - Procure To Pay"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${goods_received.material} = ${materials.material};;
+    sql_on: ${goods_received.material} = ${material_dimension.material};;
     relationship: many_to_one
   }
 }
@@ -30,9 +30,9 @@ explore: goods_received {
 explore: purchase_order {
   label: "Purchase, Materials and Suppliers"
   group_label: "SAP - Procure To Pay"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${purchase_order.purchase_order_item_material_number} = ${materials.material};;
+    sql_on: ${purchase_order.purchase_order_item_material_number} = ${material_dimension.material};;
     relationship: many_to_one
   }
   join: suppliers {
@@ -45,9 +45,9 @@ explore: purchase_order {
 explore: supplier_invoice {
   label: "Suplier_Invoice, Materials and Suppliers"
   group_label: "SAP - Procure To Pay"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${supplier_invoice.material_number} = ${materials.material};;
+    sql_on: ${supplier_invoice.material_number} = ${material_dimension.material};;
     relationship: many_to_one
   }
   join: suppliers {
@@ -62,15 +62,15 @@ explore: supplier_invoice {
 explore: orders {
   label: "Orders, Materials and Customers"
   group_label: "SAP - Order To Cash"
-  join: materials {
+  join: material_dimension{
     type: left_outer
-    sql_on: ${materials.material} = ${orders.material} ;;
+    sql_on: ${material_dimension.material} = ${orders.material} ;;
     relationship: many_to_one
   }
   join: customers {
     relationship: many_to_one
     type: left_outer
-    sql_on: ${customers.customer_number} = ${orders.customer_number} ;;
+    sql_on: ${orders.customer_number} = ${customers.customer_number} ;;
   }
 }
 
@@ -78,9 +78,9 @@ explore: orders {
 explore: revenue {
   label: "Revenue, Materials and Customers"
   group_label: "SAP - Order To Cash"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${materials.material} = ${revenue.material} ;;
+    sql_on: ${material_dimension.material} = ${revenue.material} ;;
     relationship: many_to_one
   }
   join: customers {
@@ -96,9 +96,9 @@ explore: revenue {
 explore: forecast_fact {
   label: "Forecast, Materials and Plant"
   group_label: "SAP - Supply Chain Management"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${forecast_fact.material_number} = ${materials.material} ;;
+    sql_on: ${forecast_fact.material_number} = ${material_dimension.material} ;;
     sql_where: ${forecast_fact.date_type} = 3 ;; #Filtering for forecast by month
     relationship: one_to_many
   }
@@ -113,9 +113,9 @@ explore: forecast_fact {
 explore: sales_order_delivery_fact {
   label: "Sales Order Deliver, Customer, Materials and Plant"
   group_label: "SAP - Supply Chain Management"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${sales_order_delivery_fact.material} = ${materials.material} ;;
+    sql_on: ${sales_order_delivery_fact.material} = ${material_dimension.material} ;;
     relationship: many_to_one
   }
   join: plant {
@@ -157,9 +157,9 @@ explore: sales_order_schedule_fact_month {
 explore: material_inventory {
   label: "Inventory and Materials"
   group_label: "SAP - Supply Chain Management"
-  join: materials {
+  join: material_dimension {
     type: left_outer
-    sql_on: ${material_inventory.material_number} = ${materials.material};;
+    sql_on: ${material_inventory.material_number} = ${material_dimension.material};;
     relationship: many_to_one
   }
 

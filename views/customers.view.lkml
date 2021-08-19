@@ -1,5 +1,6 @@
 view: customers {
-  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.customer_dimension` ;;
+  sql_table_name: `sap-adapter.p2p_sap_cdf_dimension.customer_dimension` ;;
+  #sql_table_name: ` @{PROJECT}.@{DIMENSION_DATASET}.customer_dimension` ;;
 
   dimension: account_group {
     type: string

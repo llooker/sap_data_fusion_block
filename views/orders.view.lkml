@@ -191,6 +191,7 @@ view: orders {
   }
 
   dimension: sales_order_number {
+    primary_key: yes
     type: string
     description: "The number that uniquely identifies the  sales document"
     sql: ${TABLE}.SalesOrderNumber ;;

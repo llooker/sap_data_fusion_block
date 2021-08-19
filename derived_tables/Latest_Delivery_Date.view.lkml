@@ -5,7 +5,7 @@ view: ldd {
       SELECT
       MAX(ActiveGoodsMovementDate) as Latest_Delivery_Date
       FROM
-       `sap-adapter.p2p_sap_cdf_facts.sales_order_delivery_fact`
+       `@{PROJECT}.@{FACT_DATASET}.sales_order_delivery_fact`
 
 
       ;;

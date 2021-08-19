@@ -1,5 +1,4 @@
 view: supplier_invoice {
-  #sql_table_name: `sap-adapter.p2p_sap_cdf_facts.supplier_invoice_fact`
   sql_table_name: `@{PROJECT}.@{FACT_DATASET}.supplier_invoice_fact`
     ;;
 

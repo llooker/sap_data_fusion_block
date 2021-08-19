@@ -1,6 +1,6 @@
 view: materials {
-  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.material_dimension`;;
   drill_fields: [material,material_group,material_category,product_hierarchy]
+  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.material_dimension`;;
 
   dimension: authorization_group {
     type: string

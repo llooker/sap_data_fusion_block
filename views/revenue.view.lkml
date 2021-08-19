@@ -1,6 +1,6 @@
 view: revenue {
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.revenue_fact`;;
   drill_fields: [material,total_discount,total_gross_sales]
+  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.revenue_fact`;;
 
   dimension: account_type {
     type: string
