@@ -6,7 +6,7 @@ constant: PROJECT {
 }
 
 constant: DIMENSION_DATASET {
-  value: "p2p_sap_cdf_dimensions"
+  value: "p2p_sap_cdf_dimension"
   export: override_optional
 }
 
