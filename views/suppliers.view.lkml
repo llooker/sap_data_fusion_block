@@ -1,5 +1,5 @@
 view: suppliers {
-  sql_table_name: `@{PROJECT}.@{FACT_DATASET}.supplier_dimension`
+  sql_table_name: `@{PROJECT}.@{DIMENSION_DATASET}.supplier_dimension`
   ;;
 
     dimension: address {
